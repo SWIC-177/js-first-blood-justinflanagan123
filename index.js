@@ -26,3 +26,7 @@ function verifyAdulthood(personName, personAge) {
 
   return `You are not old enough to enter, ${personName}.`;
 }
+
+for (let i = 0; i < people.length; i++) {
+  console.log(verifyAdulthood(people[i].name, people[i].age));
+}
