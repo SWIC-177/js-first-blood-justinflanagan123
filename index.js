@@ -1,7 +1,14 @@
-function greet(name) {
-  return "Hello, " + name;
+const person = {
+  name: "John",
+  age: 17,
+};
+
+function verifyAdulthood(personName, personAge) {
+  if (personAge >= 18) return `Welcome, ${personName}!`;
+
+  return `You are not old enough to enter, ${personName}.`;
 }
 
-const greeting = greet("Justin");
+const adultMessage = verifyAdulthood(userName, userAge);
 
-console.log(greeting);
+console.log(adultMessage);
