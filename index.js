@@ -28,5 +28,6 @@ function verifyAdulthood(personName, personAge) {
 }
 
 for (let i = 0; i < people.length; i++) {
-  console.log(verifyAdulthood(people[i].name, people[i].age));
+  const person = people[i];
+  console.log(verifyAdulthood(person.name, person.age));
 }
