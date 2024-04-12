@@ -31,14 +31,23 @@ const people = [
   },
 ];
 
-function renameOdds(p) {
-  for (let i = 0; i < p.length; i++) {
-    if (p[i].id % 2 !== 0) {
-      p[i].name = "Odd Name";
+function renameOdds(peopleArray) {
+  const modifiedPeople = [];
+
+  for (let i = 0; i < peopleArray.length; i += 1) {
+    const person = { ...peopleArray[i] };
+
+    if (person.id % 2 !== 0) {
+      person.name = "Odd Name";
     }
+
+    modifiedPeople[i] = person;
   }
 
-  return p;
+  return modifiedPeople;
 }
 
-console.log(renameOdds(people));
+const modifiedPeople = renameOdds(people);
+
+console.log("Original people array:", people);
+console.log("Modified people array:", modifiedPeople);
