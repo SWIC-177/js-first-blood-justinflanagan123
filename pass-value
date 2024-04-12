@@ -1,0 +1,2 @@
+const younger1 = 13;
+let younger2 = younger1;
