@@ -1,2 +1,6 @@
 const younger1 = 13;
 let younger2 = younger1;
+
+function incrementAge(age) {
+  return age + 1;
+}
