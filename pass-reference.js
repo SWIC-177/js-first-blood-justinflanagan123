@@ -8,3 +8,10 @@ const person = {
     zip: "10001",
   },
 };
+
+const otherPerson = person;
+
+otherPerson.name = "Jane Doe";
+
+console.log(`Person's name is: ${person.name}`);
+console.log(`Other Person's name is: ${otherPerson.name}`);
